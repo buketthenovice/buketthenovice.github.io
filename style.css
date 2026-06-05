@@ -1,6 +1,6 @@
 .left, .right {
   float: left;
-  width: 20%; /* The width is 20%, by default */
+  width: 40%; /* The width is 20%, by default */
 }
 
 .main {
