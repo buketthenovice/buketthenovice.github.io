@@ -1,16 +1,75 @@
-.left, .right {
-  float: left;
-  width: 20%; /* The width is 20%, by default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.main {
-  float: left;
-  width: 60%; /* The width is 60%, by default */
+body {
+    background: #f2f2f2;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Tüm dividerlar */
+.divider {
+    border: 2px dashed #999;
+    background: #e8e8e8;
+    border-radius: 4px;
+}
+
+/* Üst Alan */
+.top-section {
+    height: 120px;
+    width: 100%;
+}
+
+/* Orta Satır */
+.middle-row {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr 120px;
+    gap: 30px;
+}
+
+/* Kutular */
+.small-box {
+    height: 120px;
+}
+
+.large-box {
+    height: 120px;
+}
+
+/* Alt Alan */
+.bottom-section {
+    height: 120px;
+    width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .middle-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobil */
+@media (max-width: 576px) {
+    .middle-row {
+        grid-template-columns: 1fr;
+    }
+
+    .top-section,
+    .small-box,
+    .large-box,
+    .bottom-section {
+        height: 100px;
+    }
 }
