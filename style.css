@@ -1,75 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortfolioDeneme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    background: #f2f2f2;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
+    <div class="container">
 
-.container {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+        <div class="divider top-section">GAME DEV PORTFOLIO</div>
 
-/* Tüm dividerlar */
-.divider {
-    border: 2px dashed #999;
-    background: #e8e8e8;
-    border-radius: 4px;
-}
+        <div class="middle-row">
+            <div class="divider small-box"></div>
+            <div class="divider large-box"><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjlxZzI0c2wxcG9sNmY0MW5zemo0bzc3d25rcTdrOTNuZjVidjQyMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tXL4FHPSnVJ0A/giphy.gif">
+</div>
+            <div class="divider large-box"></div>
+            <div class="divider small-box"></div>
+        </div>
 
-/* Üst Alan */
-.top-section {
-    height: 120px;
-    width: 100%;
-}
+        <div class="divider bottom-section">Bottom text</div>
 
-/* Orta Satır */
-.middle-row {
-    display: grid;
-    grid-template-columns: 120px 1fr 1fr 120px;
-    gap: 30px;
-}
+    </div>
 
-/* Kutular */
-.small-box {
-    height: 120px;
-}
-
-.large-box {
-    height: 120px;
-}
-
-/* Alt Alan */
-.bottom-section {
-    height: 120px;
-    width: 100%;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-    .middle-row {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* Mobil */
-@media (max-width: 576px) {
-    .middle-row {
-        grid-template-columns: 1fr;
-    }
-
-    .top-section,
-    .small-box,
-    .large-box,
-    .bottom-section {
-        height: 100px;
-    }
-}
+</body>
+</html>
