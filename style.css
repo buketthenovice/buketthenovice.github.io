@@ -7,7 +7,8 @@
 html,
 body{
     height:100%;
-    font-family:Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
 }
 
 .page{
@@ -16,63 +17,134 @@ body{
     flex-direction:column;
 }
 
+/* HEADER */
+
 header{
     padding:20px;
 }
 
+header h1{
+    font-size:2rem;
+}
+
+/* MAIN */
+
 main{
     flex:1;
+
     display:grid;
-    grid-template-columns:80px 1fr 80px;
-    gap:20px;
+
+    grid-template-columns:
+        120px
+        1fr
+        120px;
+
+    gap:30px;
+
     padding:20px;
 }
 
-.carousel{
+/* BUTONLAR */
+
+.nav-btn{
+    border:none;
+    background:#e7e7e7;
+    cursor:pointer;
+    font-size:3rem;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    background:#d5d5d5;
+}
+
+/* CAROUSEL */
+
+.carousel-wrapper{
+    overflow:hidden;
+}
+
+.carousel-track{
+    display:flex;
+    transition:transform .5s ease;
+}
+
+.slide{
+    min-width:100%;
+
     display:grid;
 
-    /* Yazı resimden biraz daha geniş */
-    grid-template-columns:1fr 1.15fr;
+    grid-template-columns:
+        1fr
+        1.15fr;
 
-    gap:30px;
+    gap:40px;
     align-items:center;
 }
 
-.image-container{
+/* RESİM */
+
+.image-section{
     width:100%;
 }
 
-.image-container img{
+.image-section img{
     width:100%;
-    height:auto;
     display:block;
     border-radius:12px;
 }
 
-.text-container h2{
+/* YAZI */
+
+.text-section h2{
     font-size:3rem;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
-.text-container p{
+.text-section p{
     font-size:1.2rem;
-    line-height:1.6;
+    line-height:1.7;
 }
 
-.nav-btn{
-    border:none;
-    background:#ececec;
-    cursor:pointer;
-    font-size:3rem;
-    border-radius:12px;
-    transition:.2s;
-}
-
-.nav-btn:hover{
-    background:#dcdcdc;
-}
+/* FOOTER */
 
 footer{
-    padding:15px 20px;
+    padding:20px;
     border-top:1px solid #ccc;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    main{
+        grid-template-columns:
+            80px
+            1fr
+            80px;
+    }
+
+    .slide{
+        grid-template-columns:1fr;
+    }
+
+    .text-section h2{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:700px){
+
+    main{
+        grid-template-columns:1fr;
+    }
+
+    .nav-btn{
+        height:60px;
+    }
+
+    .carousel-wrapper{
+        order:2;
+    }
 }
