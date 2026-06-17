@@ -1,42 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="page">
 
-        <header>
-            <h1>GAME DEV PORTFOLIO</h1>
-        </header>
+<div class="page">
 
-        <main>
+    <header>
+        <h1>GAME DEV PORTFOLIO</h1>
+    </header>
 
-            <button class="nav-btn left" onclick="prevSlide()">
-                ❮
-            </button>
+    <main>
 
-            <section class="carousel">
+        <button class="nav-btn" onclick="prevSlide()">
+            ❮
+        </button>
 
-                <div class="image-container">
-                    <img id="slideImage" src="images/game1.jpg" alt="">
+        <div class="carousel-wrapper">
+
+            <div class="carousel-track" id="carouselTrack">
+
+                <div class="slide">
+
+                    <div class="image-section">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnhtNHFvcnNuYXN5Y2Q2dXlvbXFtd3VhcXk0MDRiMzFjNjNxMGg5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tXL4FHPSnVJ0A/giphy.gif" alt="">
+                    </div>
+
+                    <div class="text-section">
+                        <h2>Project One</h2>
+                        <p>
+                            Buraya ilk projenin açıklaması gelecek.
+                            İstediğin kadar uzun yazı yazabilirsin.
+                            Yazı alanı resimden biraz daha geniştir.
+                        </p>
+                    </div>
+
                 </div>
 
-                <div class="text-container">
-                    <h2 id="slideTitle">Game Title</h2>
-                    <p id="slideDescription">
-                        Description...
-                    </p>
+                <div class="slide">
+
+                    <div class="image-section">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnhtNHFvcnNuYXN5Y2Q2dXlvbXFtd3VhcXk0MDRiMzFjNjNxMGg5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tXL4FHPSnVJ0A/giphy.gif" alt="">
+                    </div>
+
+                    <div class="text-section">
+                        <h2>Project Two</h2>
+                        <p>
+                            İkinci oyun açıklaması.
+                            Gameplay, kullandığın teknolojiler,
+                            sorumlulukların vb.
+                        </p>
+                    </div>
+
                 </div>
 
-            </section>
+                <div class="slide">
 
-            <button class="nav-btn right" onclick="nextSlide()">
-                ❯
-            </button>
+                    <div class="image-section">
+                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnhtNHFvcnNuYXN5Y2Q2dXlvbXFtd3VhcXk0MDRiMzFjNjNxMGg5MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tXL4FHPSnVJ0A/giphy.gif" alt="">
+                    </div>
 
-        </main>
+                    <div class="text-section">
+                        <h2>Project Three</h2>
+                        <p>
+                            Üçüncü proje açıklaması.
+                        </p>
+                    </div>
 
-        <footer>
-            Bottom Text
-        </footer>
+                </div>
 
-    </div>
+            </div>
 
-    <script src="script.js"></script>
+        </div>
+
+        <button class="nav-btn" onclick="nextSlide()">
+            ❯
+        </button>
+
+    </main>
+
+    <footer>
+        Bottom Text
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
+</html>
