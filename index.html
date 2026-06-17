@@ -1,28 +1,42 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioDeneme</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
+    <div class="page">
 
-    <div class="container">
+        <header>
+            <h1>GAME DEV PORTFOLIO</h1>
+        </header>
 
-        <div class="divider top-section">GAME DEV PORTFOLIO</div>
+        <main>
 
-        <div class="middle-row">
-            <div class="divider small"></div>
-            <div class="divider large"><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjlxZzI0c2wxcG9sNmY0MW5zemo0bzc3d25rcTdrOTNuZjVidjQyMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tXL4FHPSnVJ0A/giphy.gif">
-</div>
-            <div class="divider large"><h1>Lorem Ipsum</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam velit, rutrum a suscipit eget, scelerisque quis quam. Donec nec tristique urna. Mauris nec metus ex. Integer placerat mi consectetur, tempor massa a, lacinia leo. Etiam convallis ligula sapien, id tristique orci tempor ut. Suspendisse vel placerat ipsum. Vivamus nulla elit, eleifend et ex viverra, pulvinar auctor nisi. Ut rutrum gravida rutrum. Vestibulum turpis enim, feugiat pharetra enim non, hendrerit dignissim orci. Ut porta eros id elit porttitor pretium.</p></div>
-            <div class="divider small"></div>
-        </div>
+            <button class="nav-btn left" onclick="prevSlide()">
+                ❮
+            </button>
 
-        <div class="divider">Bottom text</div>
+            <section class="carousel">
+
+                <div class="image-container">
+                    <img id="slideImage" src="images/game1.jpg" alt="">
+                </div>
+
+                <div class="text-container">
+                    <h2 id="slideTitle">Game Title</h2>
+                    <p id="slideDescription">
+                        Description...
+                    </p>
+                </div>
+
+            </section>
+
+            <button class="nav-btn right" onclick="nextSlide()">
+                ❯
+            </button>
+
+        </main>
+
+        <footer>
+            Bottom Text
+        </footer>
 
     </div>
 
+    <script src="script.js"></script>
 </body>
-</html>
