@@ -1,75 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    background: #f2f2f2;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+html,
+body{
+    height:100%;
+    font-family:Arial, sans-serif;
 }
 
-.container {
-    max-width: 1600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
 }
 
-/* Tüm dividerlar */
-.divider {
-    border: 2px dashed #999;
-    background: #e8e8e8;
-    border-radius: 4px;
+header{
+    padding:20px;
 }
 
-/* Üst Alan */
-.top-section {
-    height: 120px;
-    width: 100%;
+main{
+    flex:1;
+    display:grid;
+    grid-template-columns:80px 1fr 80px;
+    gap:20px;
+    padding:20px;
 }
 
-/* Orta Satır */
-.middle-row {
-    display: grid;
-    grid-template-columns: 120px 1fr 1fr 120px;
-    gap: 30px;
+.carousel{
+    display:grid;
+
+    /* Yazı resimden biraz daha geniş */
+    grid-template-columns:1fr 1.15fr;
+
+    gap:30px;
+    align-items:center;
 }
 
-/* Kutular */
-.small-box {
-    height: 120px;
+.image-container{
+    width:100%;
 }
 
-.large-box {
-    height: 120px;
+.image-container img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:12px;
 }
 
-/* Alt Alan */
-.bottom-section {
-    height: 120px;
-    width: 100%;
+.text-container h2{
+    font-size:3rem;
+    margin-bottom:15px;
 }
 
-/* Tablet */
-@media (max-width: 992px) {
-    .middle-row {
-        grid-template-columns: 1fr 1fr;
-    }
+.text-container p{
+    font-size:1.2rem;
+    line-height:1.6;
 }
 
-/* Mobil */
-@media (max-width: 576px) {
-    .middle-row {
-        grid-template-columns: 1fr;
-    }
+.nav-btn{
+    border:none;
+    background:#ececec;
+    cursor:pointer;
+    font-size:3rem;
+    border-radius:12px;
+    transition:.2s;
+}
 
-    .top-section,
-    .small-box,
-    .large-box,
-    .bottom-section {
-        height: 100px;
-    }
+.nav-btn:hover{
+    background:#dcdcdc;
+}
+
+footer{
+    padding:15px 20px;
+    border-top:1px solid #ccc;
 }
